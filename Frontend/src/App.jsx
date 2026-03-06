@@ -5,7 +5,7 @@ function App(){
   const[text, setText] = useState("BTS")
   const[video, setVideo] = useState([]);
   const getVideo = async()=>{
-    const res = await axios.post("http://localhost:4000/mood",
+    const res = await axios.post("https://mood-rec-app.onrender.com",
     {text:text});
     setVideo(res.data); 
   };
